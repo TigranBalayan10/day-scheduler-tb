@@ -13,6 +13,12 @@ $('div.row').each((index, element) => {
   var rowId = element.id;
   // get textarea el with id
   var textareaEl = $('div#' + rowId + '> textarea');
+  //get text area input from local storage
+  textareaEl.text(localStorage.getItem(rowId));
+  // save to local storage when clicked on each button by its time
+  $('div#' + rowId + '> button').on('click', function () {
+    localStorage.setItem(rowId, textareaEl.val().trim());
+  })
   // get only string number from id for each hour in the row
   var hour = rowId.split('-')[1];
   // set textarea background colors depending if current hour is past, now or present
