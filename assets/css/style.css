@@ -13,6 +13,7 @@ textarea{
   padding: 10px;
 }
 
+
 .jumbotron {
   text-align: center;
   background-color: transparent;
@@ -29,6 +30,7 @@ textarea{
 .description:focus {
   border-color: #31b0c7;
   box-shadow: 0 0 0 0.2rem rgba(22, 160, 214, 0.25);
+  
 }
 
 .time-block{
